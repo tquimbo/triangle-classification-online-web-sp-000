@@ -9,9 +9,9 @@ class Triangle
     end
 
     def kind
-      if @one < 0 || @two < 0 || @three < 0
+      if @one == 0 || @two == 0 || @three == 0
         raise TriangleError
-      elsif @one == 0 || @two == 0 || @three == 0
+      elsif @one < 0 || @two < 0 || @three < 0
         raise TriangleError
       elsif @one >= (@two + @three)
         raise TriangleError
